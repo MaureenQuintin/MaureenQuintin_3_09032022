@@ -1,2 +1,35 @@
-test
-test 2
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css" integrity="sha512-E+53kXnJyuZFSz75xSmTfCpUNj3gp9Bd80TeQQMTPJTVWDRHPOpEYczGwWtsZXvaiz27cqvhdH8U+g/NMYua3A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="Base/styles.css"/>
+        <link rel="stylesheet" href="Layout/header.css"/>
+        <title>Ohmyfood</title>
+    </head>
+    <body>
+        <div class="box-sizing">
+            <header class="logo-container">
+                <img class="logo-container__image" src="Images/logo/ohmyfood.png" alt="Logo Ohmyfood">
+            </header>
+            <form class="searchBar">
+                <div class="searchBar__iconeContainer">
+                    <i class="fas fa-map-marker-alt searchBar--icone"></i>
+                </div>
+                <div class="searchBar__text">
+                    <input class="searchBar--localisation" type="text" placeholder="Paris, Belleville">
+                </div>
+            </form>
+            <section class="topSection">
+                <div class="topSection__titleContainer">
+                    <h1 class="topSection--title">Réservez le menu qui vous convient</h1>
+                </div>
+                <div class="topSection__textContainer">
+                    <span class="topSection--text">Découvrez des restaurants d'exception, sélectionnés par nos soins.</span>
+                </div>
+                <button class="topSection__button">
+                    <span class="topSection-button--btn">Explorer nos restaurants</span>
+                </button>
+            </section>
+        </div>
+    </body>
