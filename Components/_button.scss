@@ -1,0 +1,41 @@
+.btnSection {
+
+    &__buttonContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 160px;
+        border-radius: 75px;
+        border: none;
+        background: linear-gradient($color-secondary, $color-primary);
+        box-shadow: 0px 5px 10px rgb(126, 124, 124);
+    }
+
+    &--text {
+        display: flex;
+        justify-content: center;
+        width: 560px;
+        height: 130px;
+        font-size: 40px;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        
+        cursor: pointer;
+        transition: all .5s;
+        transition-timing-function: cubic-bezier(.2, 3, .4, 1);
+        
+        &:hover{
+        transform: scale(1.1, 1.1);
+        }
+        
+        &:active{
+        transform: scale(1.05, 1.05);
+    }
+}
+}
