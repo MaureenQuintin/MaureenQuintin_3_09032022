@@ -36,6 +36,29 @@
         
         &:active{
         transform: scale(1.05, 1.05);
+        }
     }
 }
+
+@media screen and (min-width: 768px){
+    
+}
+
+@media screen and (min-width: 1024px){
+    .btnSection {
+    
+        &__button {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            border-radius: 80px;
+        }
+    
+        &--text {
+            display: flex;
+            justify-content: center;
+            width: 340px;
+            height: 85px;
+            font-size: 25px;
+        }
+    }
 }

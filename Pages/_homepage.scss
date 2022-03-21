@@ -1,4 +1,3 @@
-@media screen and (min-width: 320px){
     .searchBar {
         background-color: $bg-search__color;
         height: 130px;
@@ -17,6 +16,16 @@
             width: 320px;
             font-family: 'Roboto', sans-serif;
             font-weight: 400;
+
+            &::placeholder {
+                color: black;
+            }
+
+            &:focus { 
+                &::placeholder {
+                    opacity: 0;
+                }
+            }
         }
 
         &--icone {
@@ -29,6 +38,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        flex-direction: column;
 
         &__titleContainer {
             display: flex;
@@ -65,7 +75,162 @@
     }
 
     .btnSection {
-        background-color: #F6F6F6;
+        background-color: $bg-color__grey;
     }
 
+    .sectionTitle__text {
+        font-size: 60px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        padding-left: 45px;
+        margin-top: 100px;
+    }
+
+    .functionningSection {
+
+        &__cardsContainer {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+
+        &__card {
+            display: flex;
+            align-items: center;
+            background-color: $bg-color__grey;
+            border-radius: 45px 45px 45px 45px;
+            height: 200px;
+            width: 900px;
+            box-shadow: 0px 5px 10px rgb(126, 124, 124);
+            margin-bottom: 70px;
+
+            &:hover {
+                background-color: lighten($color-primary, 35%);
+
+                .functionningSection--icone{
+                    color: $color-primary;
+                }
+            }
+        }
+
+        &--number {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            background-color: $color-primary;
+            border-radius: 100px;
+            color: white;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 45px;
+            margin: -30px;
+        }
+
+        &--icone {
+            color: #4D4D4D;
+            font-size: 60px;
+            padding-left: 80px;
+            padding-right: 50px;
+        }
+
+        &--text {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 46px;
+        }
+    }
+
+@media screen and (min-width: 768px){
+    
 }
+
+@media screen and (min-width: 1024px){
+
+    .searchBar {
+        height: 100px;
+    
+        &--localisation {
+            font-size: 30px;
+        }
+
+        &--icone {
+            font-size: 35px;
+        }
+    }
+    
+    .topSection {
+
+        &--title {
+            font-size: 35px;
+            padding: 50px 95px 0px 95px;
+        }
+
+        &__textContainer{
+            font-size: 25px;
+        }
+
+        &--text {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            color: #4D4D4D;
+            padding: 40px 5px 0px 5px;
+
+        }
+    }
+
+    .sectionTitle__text {
+        font-size: 35px;
+        padding-left: 45px;
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+
+    .functionningSection {
+
+        &__cardsContainer {
+            justify-content: space-evenly;
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+        }
+
+        &__card {
+            border-radius: 35px 35px 35px 35px;
+            height: 100px;
+            width: 400px;
+            margin-bottom: 70px;
+        }
+
+        &--number {
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            margin: -25px;
+        }
+
+        &--icone {
+            font-size: 30px;
+            padding-left: 40px;
+            padding-right: 20px;
+        }
+
+        &--text {
+            font-size: 20px;
+        }
+    }
+
+    @media screen and (min-width: 2560px) {
+
+        .functionningSection{
+
+            &__card {
+                width: 700px; 
+            }
+        }
+    }
+}
+

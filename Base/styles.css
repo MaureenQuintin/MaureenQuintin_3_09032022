@@ -15,67 +15,204 @@ body {
   padding-bottom: 40px;
 }
 
-@media screen and (min-width: 320px) {
+.searchBar {
+  background-color: #EAEAEA;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 5px solid rgba(0, 0, 0, 0);
+  -o-border-image: linear-gradient(white, grey) 70;
+     border-image: linear-gradient(white, grey) 70;
+}
+.searchBar--localisation {
+  background-color: #EAEAEA;
+  border: 0;
+  font-size: 40px;
+  padding-top: 10px;
+  padding-left: 50px;
+  width: 320px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.searchBar--localisation::-moz-placeholder {
+  color: black;
+}
+.searchBar--localisation:-ms-input-placeholder {
+  color: black;
+}
+.searchBar--localisation::placeholder {
+  color: black;
+}
+.searchBar--localisation:focus::-moz-placeholder {
+  opacity: 0;
+}
+.searchBar--localisation:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+.searchBar--localisation:focus::placeholder {
+  opacity: 0;
+}
+.searchBar--icone {
+  font-size: 45px;
+}
+
+.topSection {
+  background-color: #F6F6F6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.topSection__titleContainer {
+  display: flex;
+  justify-content: space-around;
+}
+.topSection--title {
+  font-size: 65px;
+  text-align: center;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  padding: 80px 95px 0px 95px;
+}
+.topSection__textContainer {
+  display: flex;
+  justify-content: space-around;
+}
+.topSection__textContainer {
+  font-size: 44px;
+  text-align: center;
+  margin: 0;
+}
+.topSection--text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #4D4D4D;
+  padding: 70px 50px 0px 50px;
+}
+
+.btnSection {
+  background-color: #F6F6F6;
+}
+
+.sectionTitle__text {
+  font-size: 60px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  padding-left: 45px;
+  margin-top: 100px;
+}
+
+.functionningSection__cardsContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.functionningSection__card {
+  display: flex;
+  align-items: center;
+  background-color: #F6F6F6;
+  border-radius: 45px 45px 45px 45px;
+  height: 200px;
+  width: 900px;
+  box-shadow: 0px 5px 10px #7e7c7c;
+  margin-bottom: 70px;
+}
+.functionningSection__card:hover {
+  background-color: #f2eafb;
+}
+.functionningSection__card:hover .functionningSection--icone {
+  color: #9356DC;
+}
+.functionningSection--number {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  background-color: #9356DC;
+  border-radius: 100px;
+  color: white;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  margin: -30px;
+}
+.functionningSection--icone {
+  color: #4D4D4D;
+  font-size: 60px;
+  padding-left: 80px;
+  padding-right: 50px;
+}
+.functionningSection--text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 46px;
+}
+
+@media screen and (min-width: 1024px) {
   .searchBar {
-    background-color: #EAEAEA;
-    height: 130px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 5px solid rgba(0, 0, 0, 0);
-    -o-border-image: linear-gradient(white, grey) 70;
-       border-image: linear-gradient(white, grey) 70;
+    height: 100px;
   }
   .searchBar--localisation {
-    background-color: #EAEAEA;
-    border: 0;
-    font-size: 40px;
-    padding-top: 10px;
-    padding-left: 50px;
-    width: 320px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
+    font-size: 30px;
   }
   .searchBar--icone {
-    font-size: 45px;
+    font-size: 35px;
   }
 
-  .topSection {
-    background-color: #F6F6F6;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  .topSection__titleContainer {
-    display: flex;
-    justify-content: space-around;
-  }
   .topSection--title {
-    font-size: 65px;
-    text-align: center;
-    margin: 0;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    padding: 80px 95px 0px 95px;
+    font-size: 35px;
+    padding: 50px 95px 0px 95px;
   }
   .topSection__textContainer {
-    display: flex;
-    justify-content: space-around;
-  }
-  .topSection__textContainer {
-    font-size: 44px;
-    text-align: center;
-    margin: 0;
+    font-size: 25px;
   }
   .topSection--text {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     color: #4D4D4D;
-    padding: 70px 50px 0px 50px;
+    padding: 40px 5px 0px 5px;
   }
 
-  .btnSection {
-    background-color: #F6F6F6;
+  .sectionTitle__text {
+    font-size: 35px;
+    padding-left: 45px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+  }
+
+  .functionningSection__cardsContainer {
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .functionningSection__card {
+    border-radius: 35px 35px 35px 35px;
+    height: 100px;
+    width: 400px;
+    margin-bottom: 70px;
+  }
+  .functionningSection--number {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    margin: -25px;
+  }
+  .functionningSection--icone {
+    font-size: 30px;
+    padding-left: 40px;
+    padding-right: 20px;
+  }
+  .functionningSection--text {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1024px) and (min-width: 2560px) {
+  .functionningSection__card {
+    width: 700px;
   }
 }
 .btnSection__buttonContainer {
@@ -110,4 +247,19 @@ body {
 }
 .btnSection--text:active {
   transform: scale(1.05, 1.05);
+}
+
+@media screen and (min-width: 1024px) {
+  .btnSection__button {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 80px;
+  }
+  .btnSection--text {
+    display: flex;
+    justify-content: center;
+    width: 340px;
+    height: 85px;
+    font-size: 25px;
+  }
 }/*# sourceMappingURL=styles.css.map */
