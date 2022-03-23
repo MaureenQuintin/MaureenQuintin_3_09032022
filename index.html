@@ -3,14 +3,15 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css" integrity="sha512-E+53kXnJyuZFSz75xSmTfCpUNj3gp9Bd80TeQQMTPJTVWDRHPOpEYczGwWtsZXvaiz27cqvhdH8U+g/NMYua3A==" crossorigin="anonymous" referrerpolicy="no-referrer">
-        <link rel="stylesheet" href="Base/styles.css"/>
+        <link rel="stylesheet" href="Sass/Base/styles.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
         <title>Ohmyfood</title>
     </head>
     <body>
         <div class="box-sizing">
             <header class="logo-container">
-                <img class="logo-container__image" src="Images/logo/ohmyfood.png" alt="Logo Ohmyfood">
+                <img class="logo-container__image" src="Sass/Images/logo/ohmyfood.png" alt="Logo Ohmyfood">
             </header>
             <form class="searchBar">
                 <div class="searchBar__iconeContainer">
@@ -28,13 +29,13 @@
                     <span class="topSection--text">Découvrez des restaurants d'exception, sélectionnés par nos soins.</span>
                 </div>
             </section>
-            <section class="btnSection">
+            <div class="btnSection">
                 <div class="btnSection__buttonContainer">
                     <button class="btnSection__button">
                         <span class="btnSection--text">Explorer nos restaurants</span>
                     </button>
                 </div>
-            </section>
+            </div>
             <section class="functionningSection">
                 <div class="sectionTitle">
                     <h2 class="sectionTitle__text">Fonctionnement</h2>
@@ -75,5 +76,95 @@
                     </div>
                 </div>
             </section>
+            <section class="restaurantSection">
+                <div class="sectionTitle">
+                    <h2 class="sectionTitle__text">Restaurants</h2>
+                </div>
+                <div class="restaurantSection__cardsContainer">
+                    <a href="#" class="cardLink">
+                        <div class="restaurantSection__card">
+                            <div class="restaurantSection__imageContainer">
+                                <img class="restaurantSection--image" src="Sass/Images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant 1">
+                            </div>
+                            <div class="restaurantSection__textContainer">
+                                <span class="restaurantSection--title">
+                                        La palette du goût
+                                </span>
+                                <span class="restaurantSection--city">
+                                        Ménilmontant
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="cardLink">
+                        <div class="restaurantSection__card">
+                            <div class="restaurantSection__imageContainer">
+                                <img class="restaurantSection--image" src="Sass/Images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Restaurant 2">
+                            </div>
+                            <div class="restaurantSection__textContainer">
+                                <span class="restaurantSection--title">
+                                        La note enchantée
+                                </span>
+                                <span class="restaurantSection--city">
+                                        Charonne
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="cardLink">
+                        <div class="restaurantSection__card">
+                            <div class="restaurantSection__imageContainer">
+                                <img class="restaurantSection--image" src="Sass/Images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Restaurant 3">
+                            </div>
+                            <div class="restaurantSection__textContainer">
+                                <span class="restaurantSection--title">
+                                        À la française
+                                </span>
+                                <span class="restaurantSection--city">
+                                        Cité Rouge
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="cardLink">
+                        <div class="restaurantSection__card">
+                            <div class="restaurantSection__imageContainer">
+                                <img class="restaurantSection--image" src="Sass/Images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Restaurant 4">
+                            </div>
+                            <div class="restaurantSection__textContainer">
+                                <span class="restaurantSection--title">
+                                        Le délice des sens
+                                </span>
+                                <span class="restaurantSection--city">
+                                        Folie-Méricourt
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <footer class="footerSection">
+                <div class="footerSection__logoContainer">
+                    <span class="footerSection--logo">
+                        ohmyfood
+                    </span>
+                </div>
+                <div class="footerSection__mentionContainer">
+                    <div class="footerSection__mention">
+                        <i class="fa-solid fa-utensils footerSection--icone"></i>
+                        <span>Proposer un restaurant</span>
+                    </div>
+                    <div class="footerSection__mention">
+                        <i class="fa-solid fa-handshake-angle footerSection--icone"></i>
+                        <span>Devenir partenaire</span>
+                    </div>
+                    <div class="footerSection__mention">
+                        <span>Mentions légales</span>
+                    </div>
+                    <div class="footerSection__mention">
+                        <a class="footerSection__contact" href="mailto:quintin.maureen@gmail.com">Contact</a>
+                    </div>
+                </div>
+            </footer>
         </div>
     </body>
