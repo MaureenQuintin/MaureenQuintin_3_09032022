@@ -1,0 +1,48 @@
+.heartSection {
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        .heartSection__icone {
+        opacity: 0;
+        }
+
+        .heartSection__iconeFull {
+            background: -moz-linear-gradient(top, $color-primary 0%, $color-secondary 100%); 
+            background: -webkit-linear-gradient(top, $color-primary 0%,$color-secondary 100%); 
+            background: linear-gradient(to bottom, $color-primary 0%,$color-secondary 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color:transparent;
+            opacity: 1;
+            transition: opacity 620ms ease-in-out;
+       }
+    }
+
+    &__icone {
+        font-size: 72px;
+    }
+    
+    &__iconeFull {
+        opacity: 0;
+        left: 0;
+        top: 63px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    
+}
+
+@media screen and (min-width: 1024px){
+    .heartSection{
+        &__icone {
+            font-size: 50px;
+        }
+
+        &__iconeFull {
+            top: 53px
+        }
+    }
+}
