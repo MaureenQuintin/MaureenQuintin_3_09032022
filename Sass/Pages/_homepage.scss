@@ -6,6 +6,10 @@
         align-items: center;
         border-top: 5px solid rgba(0, 0, 0, 0);
         border-image: linear-gradient(white, grey) 70;
+
+        input:focus {
+            outline-color: $color-secondary;
+        }
     
         &--localisation {
             background-color: $bg-search__color;
@@ -30,6 +34,7 @@
 
         &--icone {
             font-size: 45px;
+            padding-right: 5px;
         }
     }
 
@@ -155,7 +160,7 @@
         &__cardsContainer {
             display: flex;
             flex-wrap: wrap;
-            padding: 0px 40px 0px 40px;
+            justify-content: center;
         }
 
         &__card {
