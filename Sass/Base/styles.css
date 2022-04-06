@@ -573,6 +573,7 @@ a.footerSection__contact:hover {
   box-shadow: 0px 5px 10px #7e7c7c;
   margin-top: 50px;
   cursor: pointer;
+  max-width: 1500px;
 }
 .foodSection--text {
   font-family: "Roboto", sans-serif;
@@ -601,6 +602,7 @@ a.footerSection__contact:hover {
   font-weight: 200;
   font-size: 36px;
   padding-top: 15px;
+  padding-right: 10px;
   text-overflow: ellipsis;
   overflow: hidden;
 }
