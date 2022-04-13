@@ -48,11 +48,15 @@
         }
 
         &__mention {
-            font-size: 30px;
+            font-size: 20px;
 
             &:hover {
                 color: $color-secondary;
             }
+        }
+
+        &--icone {
+            font-size: 20px;
         }
 
         &__logoContainer {

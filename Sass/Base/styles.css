@@ -130,10 +130,13 @@ body {
     justify-content: space-between;
   }
   .footerSection__mention {
-    font-size: 30px;
+    font-size: 20px;
   }
   .footerSection__mention:hover {
     color: #FF79DA;
+  }
+  .footerSection--icone {
+    font-size: 20px;
   }
   .footerSection__logoContainer {
     display: flex;
@@ -510,7 +513,7 @@ a.footerSection__contact:hover {
   position: absolute;
   top: 55px;
   left: 90px;
-  font-size: 50px;
+  font-size: 30px;
 }
 .arrow__link {
   text-decoration: none;
@@ -559,7 +562,7 @@ a.footerSection__contact:hover {
 
 .foodSection__cardsContainer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
@@ -575,6 +578,11 @@ a.footerSection__contact:hover {
   cursor: pointer;
   max-width: 1500px;
   overflow: hidden;
+  -webkit-animation: cardAppear 0.6s;
+          animation: cardAppear 0.6s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform: scale(0);
 }
 .foodSection__card:hover .foodSection__animation {
   margin-right: 0rem;
@@ -642,7 +650,7 @@ a.footerSection__contact:hover {
   align-items: center;
   justify-content: center;
   border-radius: 100px;
-  transform: rotate(180deg);
+  transform: rotate(360deg);
   transition-duration: 0.9s;
 }
 .foodSection__animationIcone {
@@ -654,6 +662,13 @@ a.footerSection__contact:hover {
   text-decoration: none;
 }
 
+.subtitle__container {
+  -webkit-animation: cardAppear 0.6s;
+          animation: cardAppear 0.6s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform: scale(0);
+}
 .subtitle__text {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -677,6 +692,83 @@ a.footerSection__contact:hover {
   background-color: transparent;
 }
 
+.animationDelay0 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.animationDelay1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.animationDelay2 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.animationDelay3 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.animationDelay4 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.animationDelay5 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.animationDelay6 {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.animationDelay7 {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+.animationDelay8 {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.animationDelay9 {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
+.animationDelay10 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.animationDelay11 {
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+
+@-webkit-keyframes cardAppear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes cardAppear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @media screen and (min-width: 1024px) {
   .menuTitle {
     font-size: 35px;
@@ -713,14 +805,13 @@ a.footerSection__contact:hover {
   }
 
   .foodSection {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    -moz-column-gap: 1rem;
-         column-gap: 1rem;
+    display: flex;
+    justify-content: space-between;
   }
   .foodSection__bloc {
-    width: 100%;
-    display: grid;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
   }
   .foodSection__card {
     height: 85px;
