@@ -574,6 +574,13 @@ a.footerSection__contact:hover {
   margin-top: 50px;
   cursor: pointer;
   max-width: 1500px;
+  overflow: hidden;
+}
+.foodSection__card:hover .foodSection__animation {
+  margin-right: 0rem;
+}
+.foodSection__card:hover .foodSection__animationIconeContainer {
+  transform: rotate(0);
 }
 .foodSection--text {
   font-family: "Roboto", sans-serif;
@@ -616,6 +623,31 @@ a.footerSection__contact:hover {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 36px;
+}
+.foodSection__animation {
+  background-color: #99e2d0;
+  margin: -1rem -14rem -1rem 1rem;
+  width: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+  height: 100%;
+}
+.foodSection__animationIconeContainer {
+  height: 3.6rem;
+  width: 3.6rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+.foodSection__animationIcone {
+  color: #99E2D0;
+  font-size: 30px;
 }
 
 .menuCardsLink {
@@ -709,6 +741,16 @@ a.footerSection__contact:hover {
     padding-right: 20px;
   }
   .foodSection__price {
+    font-size: 15px;
+  }
+  .foodSection__animation {
+    width: 4rem;
+  }
+  .foodSection__animationIconeContainer {
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+  .foodSection__animationIcone {
     font-size: 15px;
   }
 

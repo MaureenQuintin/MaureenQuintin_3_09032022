@@ -78,6 +78,17 @@
         margin-top: 50px;
         cursor: pointer;
         max-width: 1500px;
+        overflow: hidden;
+
+        &:hover {
+            .foodSection__animation {
+                margin-right: 0rem;
+            }
+    
+            .foodSection__animationIconeContainer {
+                transform: rotate(0);
+            }
+        }
     }
 
     &--text {
@@ -127,6 +138,34 @@
         font-weight: 400;
         font-size: 36px;
     }
+
+    &__animation {
+        background-color: #99e2d0;
+        margin: -1rem -14rem -1rem 1rem;
+        width: 14rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition-duration: .5s;
+        height: 100%;
+    }
+
+    &__animationIconeContainer {
+        height: 3.6rem;
+        width: 3.6rem;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        transform: rotate(180deg);
+        transition-duration: .5s;
+    }
+
+    &__animationIcone {
+        color: $color-tertiary;
+        font-size: 30px;
+    }
 }
 
 .menuCardsLink {
@@ -159,6 +198,8 @@
 .btnSectionMenu {
     background-color: transparent;
 }
+
+
 
 @media screen and (min-width: 768px){
     
@@ -244,6 +285,21 @@
         &__price {
             font-size: 15px;
         }
+
+        &__animation {
+            // margin: -1rem -5rem -1rem 1rem;
+            width: 4rem;
+        }
+
+        &__animationIconeContainer {
+            height: 1.6rem;
+            width: 1.6rem;
+        }
+
+        &__animationIcone {
+            font-size: 15px;
+        }
+
     }
 
     .btnSectionMenu {
