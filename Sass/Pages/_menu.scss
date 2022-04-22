@@ -1,8 +1,8 @@
 .arrow {
     &__icone {
         position: absolute;
-        top: 55px;
-        left: 90px;
+        top: 45px;
+        left: 20px;
         font-size: 50px;
     }
 
@@ -28,7 +28,7 @@
 
 .menuTitle {
     font-family: 'Shrikhand';
-    font-size: 65px;
+    font-size: 40px;
 }
 
 .heartSection {
@@ -49,7 +49,7 @@
     z-index: 1;
     margin-top: -100px;
     width: 100%;
-    padding: 70px 50px 0 50px;
+    padding: 20px 20px 0 20px;
 
     &__textContainer {
         display: flex;
@@ -113,7 +113,7 @@
 
     &__plate {
         font-weight: 400;
-        font-size: 46px;
+        font-size: 30px;
         text-overflow: ellipsis;
         overflow: hidden;
     }
@@ -121,7 +121,7 @@
     &__ingredient {
         font-family: 'Roboto', sans-serif;
         font-weight: 200;
-        font-size: 36px;
+        font-size: 25px;
         padding-top: 15px;
         padding-right: 10px;
         text-overflow: ellipsis;
@@ -185,7 +185,7 @@
     &__text {
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
-        font-size: 40px;
+        font-size: 30px;
         margin-top: 110px;
         margin-bottom: 15px;
         padding-bottom: 10px;
@@ -232,6 +232,8 @@
 @media screen and (min-width: 1024px) {
     .arrow {
         &__icone {
+            top: 55px;
+            left: 90px;
             font-size: 30px;
         }
     }

@@ -2,9 +2,20 @@
     display: flex;
     align-items: center;
 
+    &__icone {
+        opacity: 1;
+        font-size: 40px;
+    }
+
+    &__iconeFull {
+        opacity: 0;
+        font-size: 0px;
+    } 
+
     &:hover {
         .heartSection__icone {
-        opacity: 0;
+            opacity: 0;
+            font-size: 0px;
         }
 
         .heartSection__iconeFull {
@@ -15,20 +26,12 @@
             -moz-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color:transparent;
-            opacity: 1;
             transition: opacity 620ms ease-in-out;
+            opacity: 1;
+            font-size: 40px;
        }
     }
 
-    &__icone {
-        font-size: 72px;
-    }
-    
-    &__iconeFull {
-        opacity: 0;
-        left: 0;
-        top: 63px;
-    }
 }
 
 @media screen and (min-width: 768px){
@@ -38,11 +41,24 @@
 @media screen and (min-width: 1024px){
     .heartSection{
         &__icone {
+            opacity: 1;
             font-size: 50px;
         }
-
+    
         &__iconeFull {
-            top: 53px
+            opacity: 0;
+            font-size: 0px;
+        } 
+        &:hover {
+            .heartSection__icone {
+                opacity: 0;
+                font-size: 0px;
+            }
+    
+            .heartSection__iconeFull {
+                opacity: 1;
+                font-size: 50px;
+           }
         }
     }
 }

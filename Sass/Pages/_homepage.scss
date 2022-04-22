@@ -14,10 +14,10 @@
         &--localisation {
             background-color: $bg-search__color;
             border: 0;
-            font-size: 40px;
+            font-size: 30px;
             padding-top: 10px; 
             padding-left: 50px;
-            width: 320px;
+            width: 100%;
             font-family: 'Roboto', sans-serif;
             font-weight: 400;
 
@@ -51,12 +51,14 @@
         }
 
         &--title {
-            font-size: 65px;
+            font-size: 50px;
             text-align: center;
             margin: 0;
             font-family: 'Roboto', sans-serif;
             font-weight: 600;
-            padding: 80px 95px 0px 95px;
+            padding-top: 80px;
+            display: flex;
+            align-items: center;
         }
 
         &__textContainer {
@@ -74,7 +76,9 @@
             font-family: 'Roboto', sans-serif;
             font-weight: 300;
             color: #4D4D4D;
-            padding: 70px 50px 0px 50px;
+            display: flex;
+            align-items: center;
+            padding-top: 70px;
 
         }
     }
@@ -86,10 +90,10 @@
     .sectionTitle { 
 
         &__text{
-            font-size: 60px;
+            font-size: 45px;
             font-family: 'Roboto', sans-serif;
             font-weight: 600;
-            padding-left: 45px;
+            padding-left: 10px;
             padding-top: 100px;
         }
     }
@@ -110,7 +114,7 @@
             background-color: $bg-color__grey;
             border-radius: 40px 40px 40px 40px;
             height: 200px;
-            width: 850px;
+            width: 93%;
             box-shadow: 0px 5px 10px rgb(126, 124, 124);
             margin-bottom: 70px;
             cursor: pointer;
@@ -149,7 +153,7 @@
         &--text {
             font-family: 'Roboto', sans-serif;
             font-weight: 400;
-            font-size: 46px;
+            font-size: 35px;
         }
     }
 
@@ -165,9 +169,10 @@
 
         &__card {
             box-shadow: 0px 5px 10px #C9C9C9;
-            width: 880px;
+            width: 100%;
             margin-bottom: 50px;
             border-radius: 40px 40px 40px 40px;
+            min-width: 250px;
 
             &:hover {
                 box-shadow: 0px 0px 4px 5px $color-tertiary;    
@@ -179,7 +184,7 @@
         }
 
         &--image {
-            width: 880px;
+            width: 100%;
             object-fit: cover;
             height: 400px;
             border-top-left-radius: 40px;
@@ -195,7 +200,7 @@
         &--title {
             font-family: 'Roboto', sans-serif;
             font-weight: 600;
-            font-size: 47px;
+            font-size: 35px;
             display: flex;
             padding: 40px 0px 15px 20px;
         }
@@ -204,23 +209,17 @@
             display: flex;
             font-family: 'Roboto', sans-serif;
             font-weight: 300;
-            font-size: 45px;
+            font-size: 35px;
             padding: 0px 0px 30px 20px;
         }
     }
 
-    .heartPosition {
-        position: relative;
-
-        &__full {
-            position: absolute;
-        }
-
-    }
 
     a.cardLink {
         color: black;
         text-decoration: none;
+        width: 100%;
+        margin: 20px;
     }
 
     a.cardLink:visited {
@@ -258,6 +257,7 @@
     
         &--localisation {
             font-size: 30px;
+            width: 320px;
         }
 
         &--icone {
@@ -325,22 +325,10 @@
         }
     }
 
-    @media screen and (min-width: 2560px) {
-
-        .functionningSection{
-
-            &__cardsContainer {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-            }
-
-            &__card {
-                width: 700px;
-            }
-        }
+    a.cardLink {
+        width: inherit;
+        margin: inherit;
     }
-
     .restaurantSection {
         
         &__cardsContainer {
@@ -373,6 +361,22 @@
 
     .cardLink {
         padding: 0px 10px 0px 10px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+
+    .functionningSection{
+
+        &__cardsContainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        &__card {
+            width: 700px;
+        }
     }
 }
 
